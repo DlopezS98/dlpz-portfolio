@@ -1,16 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './hello-world/hello-world';
+import { Grid2, Typography } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <Grid2 container direction={'column'} className="App">
+      <Grid2>
+        <img src={logo} height={250} width={250} className="App-logo" alt="logo" />
         <br />
-        <HelloWorld />
-      </header>
-    </div>
+      </Grid2>
+      <Typography color="white" fontFamily={'monospace'} variant={'h4'}>
+        Comming Soon...
+      </Typography>
+      <HelloWorld />
+    </Grid2>
   );
 }
 

@@ -1,10 +1,19 @@
 import React from 'react';
+import { Box, Grid2 } from '@mui/material';
+
+import './hello-world.scss';
 
 const HelloWorld: React.FC = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Grid2 sx={{ mt: 3 }} direction={'row'}>
+      <Box display={'flex'} justifyContent={'center'}>
+        <Box className="terminal shadow">
+          <pre>
+            {'>'} Hello World<span>_</span>
+          </pre>
+        </Box>
+      </Box>
+    </Grid2>
   );
 };
 
