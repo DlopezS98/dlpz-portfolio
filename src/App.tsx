@@ -11,7 +11,7 @@ function App() {
         <br />
       </Grid2>
       <Typography color="white" fontFamily={'monospace'} variant={'h4'}>
-        Comming Soon...
+        Coming Soon...
       </Typography>
       <HelloWorld />
     </Grid2>
